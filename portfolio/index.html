@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/personal-portfolio-img/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#s">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#con">Contact</a></li>
+                    <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Devloper</p>
+                <h1>Hi, I'm <span>Bejugam Nagendra </span><br>Computer Science <br> Graduate</h1>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/personal-portfolio-img/images/Fotoram.io.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" id="aboutme">About me</h1>
+                    <p>I am a passionate Computer Science graduate currently honing my skills as a software trainee at Codedale. With a strong foundation in programming and problem-solving, I am actively learning to design and develop end-to-end software solutions. My journey involves mastering the latest technologies, collaborating on real-world projects, and continuously expanding my expertise to create impactful and efficient applications.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p> 
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li><span>FULL STACK </span><br> Build end-to-end software solutions</li>
+                            <li><span>Front End</span><br>Build responsive Websites</li>
+                            <li><span>Back End</span><br>Build scaleable applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                            <li><span>currently</span><br>software trainee at Codedale</li>
+                            <li><span>Intenship</span><br>DSA Mentor at suntek</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>MVSR</span><br>Computer science graduate batch (2020-2024)</li>
+                            <li><span>Narayanajr college</span><br>MPC 2018-2020</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--                       ser -->
+<div id="s"><h1 class="sub-title">Skills</h1></div>
+
+<div id="skill">
+    <div class="img"><img src="img/personal-portfolio-img/images/Java.svg" ><p>JAVA</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/JavaScript.svg" ><p>JavaScript</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/HTML5.svg" ><p>HTML</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/CSS3.svg" ><p>CSS</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/Python.svg" ><p>Python</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/Express.svg" ><p>Express</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/MongoDB.svg" ><p>MongoDB</p></div>
+    <div class="img"><img src="img/personal-portfolio-img/images/Node.js.svg" ><p>NodeJs</p></div>
+    
+
+    
+</div>   
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <a href="https://github.com/Nagendra174/Automated-Attendance-System-with-Face-Recognition-main" target="_blank">
+                <div class="work">
+                
+                <img src="img/personal-portfolio-img/images/work-1.png" alt="">
+                <div class="layer">
+                <h3>Automated-Attendance-System-with-Face-Recognition</h3>
+                </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/Nagendra174/super30/tree/main/youtube" target="_blank">
+                <div class="work">
+                    <img src="img/personal-portfolio-img/images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Attendence system</h3>
+                    </div>
+                </div>
+            </a>
+            
+            
+        </div>
+    </div>
+</div>
+
+<div class="contacts" id="con">
+    <h1 class="sub-title">Contacts</h1>
+    <div class="link"><a href="https://www.linkedin.com/in/bejugam-nagendra-4130a422"><i class="fa-brands fa-linkedin "></i> Linkedin </a></div>
+    <div class="link"><a href="https://github.com/Nagendra174"><i class="fa-brands fa-github"></i> Git-hub</a></div>
+    <div class="link"><a href="https://www.instagram.com/nagendra_bejugam/"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
+
+    
+
+</div>
+
+
+
+
+
+
+
+<script >
+            
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){ 
+        for(tablink of tablinks){ 
+            tablink.classList.remove("active-link");
+        } 
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
